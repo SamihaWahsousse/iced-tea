@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: scroll;
+    background: #F1E3D3;
+   }
+   
+   .glass {
+    width: 9rem;
+    height: 20rem;
+    border: 0.35rem solid black;
+    border-radius: 0 0 10% 10%;
+    padding: 1rem;
+    position: relative;
+   }
+   
+   .drink {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#FCE327, #FF3525);
+    border-radius: 0 0 10% 10%;
+   }
+   
+   .straw {
+    width: 0.5rem;
+    height: 23rem;
+    background: red;
+    position: relative;
+    top: -22.9rem;
+    left: 6rem;
+    transform: rotate(15deg);
+   }
+   
+ .straw::before, .straw::after {
+    content: "";
+    position: absolute;
+    background-color: red;
+    width: 0.5rem;
+   }
+   
+  .straw::before {
+    height: 3rem;
+    top: -2.65rem;
+    left: 0.725rem;
+    transform: rotate(30deg);
+   }
+   
+   .straw::after {
+    height: 25.5rem;
+    top: -2.3rem;
+    left: -1rem;
+   }
+   
+   .ice {
+    width: 4rem;
+    height: 4rem;
+    background: white;
+    opacity: 40%;
+    border-radius: 30%;
+    transform: rotate(250deg);
+    position: relative;
+    margin-top: -27.5rem;
+    margin-left: 1rem;
+    box-shadow: 6rem 6rem white;
+   }
+   
+   .ice:before, .ice:after {
+    content: "";
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    background:white;
+    border-radius: 30%;
+   }
+   
+  .ice:before {
+    transform: rotate(30deg);
+    top: 1.5rem;
+    left: 6rem;
+   }
+   
+   .ice:after {
+    transform: rotate(230deg);
+    top: 4.5rem;
+    left: 2rem;
+   }
